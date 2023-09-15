@@ -78,7 +78,7 @@
       </a-entity>
 
       <!-- Sky -->
-      <a-sky color="#3c3c3c"></a-sky>
+      <a-sky src="resources/img/cielo.png"></a-sky>
 
       <!-- Enemies -->
       <a-entity sound="src:#fx_punch; poolSize:5" position="1.351 0 0" scale="0.1 0.1 0.1" id="Ghost01" static-body="shape: box" enemy="health: 30; id: 1" obj-model="obj:resources/ghost.obj" material="src:https://ucarecdn.com/f6bf9fe3-82b4-43ba-b5b6-a7e308b64c77/">
@@ -93,7 +93,7 @@
       	<a-animation attribute="position" to="1.351 0.1 0" direction="alternate-reverse" repeat="indefinite" easing="linear" dur="1000"></a-animation>
 
 	    <!-- UI -->
-	    <a-entity position="2 10 10" id="1-ui">
+	    <a-entity position="0 10 10" id="1-ui">
 	    	<a-entity position="0 10 0" material="color: red" geometry="primitive:plane; width: 7; height: 3;" text="align:center;value:HP;width:50;color:#322342" id="text-health-1"></a-entity>
 
 	    	<a-entity position="-10 -2 0" material="color: lightgrey" geometry="primitive:plane; width: 7; height: 3;" attack-button="targetEntity: #Ghost01" text="align:center;value:Attack;width:50;color:#322342" id="text-attack-1"></a-entity>
